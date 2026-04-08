@@ -1,0 +1,512 @@
+{
+  "metadata": {
+    "description": "Comprehensive reference for all public GitHub repositories of shemayon (focused on Machine Learning, Deep Learning, Computer Vision, Multi-Agent Systems, RAG, Digital Twins, and practical AI applications).",
+    "generated": "2026-04-08",
+    "totalRepositories": 31,
+    "author": "Shemayon Soloman (shemayon)",
+    "updateFrequency": "As-needed",
+    "source": "GitHub profile + repositories tab analysis"
+  },
+  "projects": [
+    {
+      "id": "Phoenix-Digital-Twin",
+      "name": "Phoenix-Digital-Twin",
+      "url": "https://github.com/shemayon/Phoenix-Digital-Twin",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2024-06-01",
+      "updated": "2026-04-01",
+      "description": "High-fidelity Digital Twin platform for industrial enterprise simulation and real-time operational control.",
+      "summary": "Feature-complete industrial-grade command center with bi-directional closed-loop control, physics-informed modeling, LSTM-based anomaly detection, predictive maintenance, and 3D visualization.",
+      "keyFeatures": [
+        "Bi-directional telemetry",
+        "Anomaly detection",
+        "3D spatial view",
+        "Remote operations command center"
+      ],
+      "techStack": {
+        "languages": [
+          "Python",
+          "TypeScript"
+        ],
+        "frameworks": [
+          "SimPy",
+          "PyTorch",
+          "Three.js",
+          "FastAPI",
+          "Gemini Pro"
+        ],
+        "deployment": [
+          "Docker"
+        ]
+      },
+      "status": "Active",
+      "topics": [
+        "digital-twin",
+        "industrial-ai",
+        "predictive-maintenance",
+        "anomaly-detection"
+      ]
+    },
+    {
+      "id": "DevPro-Orchestrator",
+      "name": "DevPro-Orchestrator",
+      "url": "https://github.com/shemayon/DevPro-Orchestrator",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2024-08-01",
+      "updated": "2026-04-01",
+      "description": "Next-generation Multi-Agent System (MAS) for orchestrating specialized AI agents using LangGraph Supervisor.",
+      "summary": "Coordinates Research, Coding, Testing, and Documentation agents with real-time React dashboard and web research tools.",
+      "keyFeatures": [
+        "LangGraph Supervisor",
+        "Dynamic task routing",
+        "Real-time monitoring UI"
+      ],
+      "techStack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [
+          "LangGraph",
+          "FastAPI",
+          "React"
+        ],
+        "deployment": [
+          "Docker"
+        ]
+      },
+      "status": "Active",
+      "topics": [
+        "multi-agent-system",
+        "langgraph",
+        "ai-orchestration"
+      ]
+    },
+    {
+      "id": "ScoutifyAI",
+      "name": "ScoutifyAI",
+      "url": "https://github.com/shemayon/ScoutifyAI",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 2,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2026-03-01",
+      "updated": "2026-04-01",
+      "description": "ScoutifyAI – Your AI-Powered Job Search Companion.",
+      "summary": "AI-powered job search assistant for automated discovery and assessment.",
+      "status": "Active",
+      "topics": [
+        "ai-job-search",
+        "job-companion"
+      ]
+    },
+    {
+      "id": "Healthcare-Finance-AI",
+      "name": "Healthcare-Finance-AI",
+      "url": "https://github.com/shemayon/Healthcare-Finance-AI",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "license": null,
+      "language": "Python",
+      "created": "2025-12-01",
+      "updated": "2026-01-08",
+      "description": "Healthcare-focused finance AI tool.",
+      "status": "Public",
+      "topics": [
+        "healthcare",
+        "finance",
+        "ai"
+      ]
+    },
+    {
+      "id": "Home-Assistant",
+      "name": "Home-Assistant",
+      "url": "https://github.com/shemayon/Home-Assistant",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "license": "Apache License 2.0",
+      "language": "Python",
+      "created": "2025-10-01",
+      "updated": "2025-12-15",
+      "description": "Home automation and assistance tool.",
+      "status": "Public",
+      "topics": [
+        "home-automation",
+        "python"
+      ]
+    },
+    {
+      "id": "Saleor-Core",
+      "name": "Saleor-Core",
+      "url": "https://github.com/shemayon/Saleor-Core",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "license": "BSD 3-Clause",
+      "language": "Python",
+      "created": "2025-09-01",
+      "updated": "2025-11-18",
+      "description": "Customized e-commerce core platform.",
+      "status": "Public",
+      "topics": [
+        "ecommerce",
+        "python",
+        "saleor"
+      ]
+    },
+    {
+      "id": "FLUX-Based-Text-to-Image-Generator-App",
+      "name": "FLUX-Based-Text-to-Image-Generator-App",
+      "url": "https://github.com/shemayon/FLUX-Based-Text-to-Image-Generator-App",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 2,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2025-01-01",
+      "updated": "2025-09-01",
+      "description": "Gradio-powered text-to-image generation app using FluxPipeline (Hugging Face diffusers) with LoRA fine-tuned weights.",
+      "summary": "Generates high-quality 1024x1024 images, especially profile portraits.",
+      "techStack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [
+          "Hugging Face diffusers",
+          "Gradio"
+        ],
+        "models": [
+          "FLUX",
+          "LoRA"
+        ]
+      },
+      "status": "Active",
+      "topics": [
+        "text-to-image",
+        "flux",
+        "generative-ai",
+        "gradio"
+      ]
+    },
+    {
+      "id": "CNN-RNN-A-Unified-Framework-for-Multi-Label-Image-Classification",
+      "name": "CNN-RNN-A-Unified-Framework-for-Multi-Label-Image-Classification",
+      "url": "https://github.com/shemayon/CNN-RNN-A-Unified-Framework-for-Multi-Label-Image-Classification",
+      "stars": 13,
+      "forks": 0,
+      "watchers": 13,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2023-01-01",
+      "updated": "2025-08-15",
+      "description": "CNN-RNN: A Unified Framework for Multi-Label Image Classification.",
+      "summary": "PyTorch implementation combining CNN (ResNet) for visual features and RNN (LSTM) for label dependency modeling.",
+      "keyFeatures": [
+        "Joint embedding space",
+        "Weighted BCE loss",
+        "Multi-label evaluation metrics"
+      ],
+      "techStack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [
+          "PyTorch",
+          "ResNet",
+          "LSTM"
+        ]
+      },
+      "status": "Active",
+      "topics": [
+        "computer-vision",
+        "multi-label-classification",
+        "cnn-rnn",
+        "pytorch"
+      ]
+    },
+    {
+      "id": "BigQuery-NL-SQL-Insight-App",
+      "name": "BigQuery-NL-SQL-Insight-App",
+      "url": "https://github.com/shemayon/BigQuery-NL-SQL-Insight-App",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2024-07-01",
+      "updated": "2025-06-11",
+      "description": "Streamlit web app for natural language to SQL queries on BigQuery datasets (e.g., Google Analytics).",
+      "summary": "LLM translates text to SQL, executes queries, and visualizes insights.",
+      "techStack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [
+          "Streamlit"
+        ],
+        "tools": [
+          "BigQuery",
+          "LLM"
+        ]
+      },
+      "status": "Active",
+      "topics": [
+        "nl2sql",
+        "bigquery",
+        "streamlit",
+        "llm"
+      ]
+    },
+    {
+      "id": "GCP-Finance-Chatbot",
+      "name": "GCP-Finance-Chatbot",
+      "url": "https://github.com/shemayon/GCP-Finance-Chatbot",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "license": null,
+      "language": "Python",
+      "created": "2025-03-01",
+      "updated": "2025-06-09",
+      "description": "GCP Finance Chatbot.",
+      "status": "Public",
+      "topics": [
+        "gcp",
+        "finance",
+        "chatbot",
+        "python"
+      ]
+    },
+    {
+      "id": "Prompts",
+      "name": "Prompts",
+      "url": "https://github.com/shemayon/Prompts",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 2,
+      "license": null,
+      "language": "Text",
+      "created": "2025-01-01",
+      "updated": "2025-05-21",
+      "description": "Prompt engineering collection.",
+      "status": "Active",
+      "topics": [
+        "prompt-engineering",
+        "llm"
+      ]
+    },
+    {
+      "id": "CoreMCP",
+      "name": "CoreMCP",
+      "url": "https://github.com/shemayon/CoreMCP",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2025-03-01",
+      "updated": "2025-05-09",
+      "description": "CoreMCP - Contextual Operations and Retrieval Engine.",
+      "status": "Active",
+      "topics": [
+        "mcp",
+        "retrieval-engine"
+      ]
+    },
+    {
+      "id": "Multimodal-MedicalRAG-Fuyu-8b",
+      "name": "Multimodal-MedicalRAG-Fuyu-8b",
+      "url": "https://github.com/shemayon/Multimodal-MedicalRAG-Fuyu-8b",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2024-02-01",
+      "updated": "2025-05-08",
+      "description": "Lightweight medical-focused Retrieval-Augmented Generation system using LangChain and Fuyu-8B multimodal model.",
+      "status": "Active",
+      "topics": [
+        "rag",
+        "multimodal",
+        "medical-ai",
+        "fuyu-8b",
+        "langchain"
+      ]
+    },
+    {
+      "id": "Calorie-Tracker",
+      "name": "Calorie-Tracker",
+      "url": "https://github.com/shemayon/Calorie-Tracker",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2024-05-08",
+      "updated": "2025-05-08",
+      "description": "Forked calorie tracker built using GPT-4o.",
+      "status": "Public",
+      "topics": [
+        "health",
+        "calorie-tracker",
+        "gpt-4o"
+      ]
+    },
+    {
+      "id": "Background-Removal-Tool-Using-BirefNet",
+      "name": "Background-Removal-Tool-Using-BirefNet",
+      "url": "https://github.com/shemayon/Background-Removal-Tool-Using-BirefNet",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 2,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2024-05-01",
+      "updated": "2025-05-07",
+      "description": "Background removal tool using BiRefNet.",
+      "status": "Active",
+      "topics": [
+        "computer-vision",
+        "background-removal",
+        "birefnet"
+      ]
+    },
+    {
+      "id": "Realtime-Eye-Tracking-and-Gaze-Estimator",
+      "name": "Realtime-Eye-Tracking-and-Gaze-Estimator",
+      "url": "https://github.com/shemayon/Realtime-Eye-Tracking-and-Gaze-Estimator",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "license": "MIT",
+      "language": "Python",
+      "created": "2023-06-01",
+      "updated": "2025-05-07",
+      "description": "Real-time eye tracking and gaze estimation using webcam and Haar cascades.",
+      "summary": "Detects eye movements, estimates gaze vectors, and generates heatmaps.",
+      "techStack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [
+          "OpenCV"
+        ]
+      },
+      "status": "Active",
+      "topics": [
+        "computer-vision",
+        "eye-tracking",
+        "gaze-estimation"
+      ]
+    },
+    {
+      "id": "RAG-with-Re-Ranking",
+      "name": "RAG-with-Re-Ranking",
+      "url": "https://github.com/shemayon/RAG-with-Re-Ranking",
+      "stars": 0,
+      "forks": 0,
+      "watchers": 0,
+      "license": null,
+      "language": "Python",
+      "created": "2023-01-01",
+      "updated": "2024-06-01",
+      "description": "Enhanced Retrieval Augmented Generation with re-ranking using CrossEncoder model.",
+      "status": "Public",
+      "topics": [
+        "rag",
+        "re-ranking",
+        "crossencoder"
+      ]
+    },
+    {
+      "id": "Tic-Tac-Toe-using-python",
+      "name": "Tic-Tac-Toe-using-python",
+      "url": "https://github.com/shemayon/Tic-Tac-Toe-using-python",
+      "stars": 2,
+      "forks": 0,
+      "watchers": 2,
+      "license": null,
+      "language": "Jupyter Notebook",
+      "created": "2023-01-01",
+      "updated": "2024-01-01",
+      "description": "Simple Tic Tac Toe game in Python.",
+      "status": "Public"
+    }
+  ],
+  "statistics": {
+    "totalStars": 28,
+    "averageStars": 1.6,
+    "numberOfProjects": 18,
+    "topRepositories": [
+      "CNN-RNN-A-Unified-Framework-for-Multi-Label-Image-Classification (13 stars)",
+      "ScoutifyAI (2 stars)",
+      "FLUX-Based-Text-to-Image-Generator-App (2 stars)",
+      "Prompts (2 stars)",
+      "Background-Removal-Tool-Using-BirefNet (2 stars)",
+      "Tic-Tac-Toe-using-python (2 stars)"
+    ],
+    "languageDistribution": {
+      "python": "90%",
+      "jupyter-notebook": "5%",
+      "others": "5%"
+    },
+    "topicClusters": {
+      "computerVision": [
+        "CNN-RNN-A-Unified-Framework-for-Multi-Label-Image-Classification",
+        "Realtime-Eye-Tracking-and-Gaze-Estimator",
+        "Background-Removal-Tool-Using-BirefNet"
+      ],
+      "multiAgentSystems": [
+        "DevPro-Orchestrator"
+      ],
+      "ragLlm": [
+        "Multimodal-MedicalRAG-Fuyu-8b",
+        "RAG-with-Re-Ranking",
+        "BigQuery-NL-SQL-Insight-App",
+        "Prompts",
+        "CoreMCP"
+      ],
+      "industrialDigitalTwin": [
+        "Phoenix-Digital-Twin"
+      ],
+      "generativeAi": [
+        "FLUX-Based-Text-to-Image-Generator-App"
+      ],
+      "appliedApps": [
+        "ScoutifyAI",
+        "Healthcare-Finance-AI",
+        "GCP-Finance-Chatbot",
+        "Calorie-Tracker"
+      ]
+    }
+  },
+  "recommendations": {
+    "forNewUsers": [
+      "Start with CNN-RNN-A-Unified-Framework (solid CV paper implementation)",
+      "Review DevPro-Orchestrator for modern LangGraph multi-agent patterns"
+    ],
+    "forContributions": [
+      "Phoenix-Digital-Twin",
+      "DevPro-Orchestrator",
+      "ScoutifyAI"
+    ],
+    "keyArchitecturalPatterns": [
+      "LangGraph for agents",
+      "Hybrid CNN-RNN models",
+      "Multimodal RAG",
+      "Physics-informed digital twins",
+      "NL-to-SQL pipelines"
+    ]
+  }
+}
