@@ -26,7 +26,7 @@ function dedupeAndSort(values: string[]) {
     seen.add(key);
     return true;
   });
-  return unique.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+  return unique.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase(), "en"));
 }
 
 function extractStringArrays(value: unknown): string[] {

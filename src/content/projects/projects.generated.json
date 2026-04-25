@@ -9,6 +9,50 @@
   },
   "projects": [
     {
+      "id": "ADIDS-Advanced-Drone-Intrusion-Detection-System-2026",
+      "name": "ADIDS-Advanced-Drone-Intrusion-Detection-System-2026",
+      "url": "https://github.com/shemayon/ADIDS-Advanced-Drone-Intrusion-Detection-System-2026",
+      "stars": 1,
+      "forks": 0,
+      "watchers": 1,
+      "license": "Apache-2.0",
+      "language": "Python",
+      "created": "2026-04-13",
+      "updated": "2026-04-26",
+      "description": "Built a real-time intrusion detection system for drone networks, converting live packet streams into explainable ML predictions with millisecond latency.",
+      "summary": "A Production-Ready ML Systems Framework for Tactical Edge UAV Telemetry. Built a real-time intrusion detection system for drone networks, converting live packet streams into explainable ML predictions with millisecond latency.",
+      "keyFeatures": [
+        "Real-time packet streaming → ML inference pipeline",
+        "Multi-class intrusion detection (DoS, MITM, Spoofing, etc.)",
+        "Explainable AI using SHAP (feature-level reasoning)",
+        "FastAPI deployment for tactical edge integration",
+        "Validated with low False Positive Rate (1.07%)"
+      ],
+      "techStack": {
+        "languages": [
+          "Python"
+        ],
+        "frameworks": [
+          "XGBoost",
+          "FastAPI",
+          "Scapy",
+          "SHAP"
+        ],
+        "ml": [
+          "Isolation Forest",
+          "FGSM Adversarial Hardening"
+        ]
+      },
+      "status": "Active",
+      "topics": [
+        "intrusion-detection",
+        "drone-security",
+        "machine-learning",
+        "explainable-ai",
+        "tactical-defense"
+      ]
+    },
+    {
       "id": "Phoenix-Digital-Twin",
       "name": "Phoenix-Digital-Twin",
       "url": "https://github.com/shemayon/Phoenix-Digital-Twin",

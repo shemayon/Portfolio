@@ -14,6 +14,16 @@ export type ProjectOverride = {
 
 /** Manual overrides keyed by project id. */
 export const projectOverrides: Record<string, ProjectOverride> = {
+  "ADIDS-Advanced-Drone-Intrusion-Detection-System-2026": {
+    featured: true,
+    highlights: [
+      "Real-time packet streaming → ML inference pipeline",
+      "Explainable AI using SHAP for feature-level reasoning",
+      "Validated with low False Positive Rate (1.07%) on 2.9M samples",
+      "FastAPI microservice for tactical edge UAV deployment",
+      "Adversarial hardening using FGSM against stealth evasions"
+    ],
+  },
   "Phoenix-Digital-Twin": {
     featured: true,
   },

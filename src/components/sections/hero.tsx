@@ -36,7 +36,7 @@ export function Hero() {
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] mix-blend-screen opacity-50" />
         <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] mix-blend-screen opacity-50" />
 
-        <div className="container mx-auto px-6 md:px-12 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
           <div className="max-w-5xl flex flex-col items-start text-left gap-10">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-12 w-full">
               <div className="shrink-0 group">
@@ -58,7 +58,7 @@ export function Hero() {
                   <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_10px_rgba(129,236,255,0.8)]" />
                   <span className="text-xs font-mono text-primary tracking-wider uppercase">System Online // AI Ready</span>
                 </div> */}
-                <h1 className="text-balance text-5xl font-heading font-bold tracking-tighter md:text-7xl lg:text-[5rem] text-foreground leading-[1.1]">
+                <h1 className="text-balance text-4xl sm:text-5xl font-heading font-bold tracking-tighter md:text-7xl lg:text-[5rem] text-foreground leading-[1.1]">
                   Architecting <br className="hidden md:block" />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary filter drop-shadow-[0_0_20px_rgba(129,236,255,0.3)]">Intelligence.</span>
                 </h1>
@@ -68,7 +68,7 @@ export function Hero() {
                 </p>
 
                 <div className="mt-12 w-full max-w-2xl">
-                  <div className="flex flex-wrap items-end gap-12">
+                  <div className="flex flex-wrap items-start md:items-end gap-8 md:gap-12">
                     {/* Connect Section */}
                     <div className="flex flex-col gap-5">
                       <span className="text-xs md:text-sm font-mono text-foreground uppercase tracking-[0.4em] font-black">Connect</span>

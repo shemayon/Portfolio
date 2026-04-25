@@ -27,31 +27,28 @@ export const experiences: Experience[] = [
     isRemote: true,
     achievements: [
       {
-        text: "Delivered a production-grade analytics and forecasting platform for a US-based client on Google Cloud Platform, integrating time-series ML pipelines with a multi-agent BigQuery AI Assistant (LangGraph + Vertex AI), improving forecast accuracy by 42% and handling 500K+ queries daily with 65% lower response latency.",
+        text: "Orchestrated and deployed a production-grade analytics and forecasting platform on Google Cloud Platform, integrating time-series ML pipelines with a multi-agent BigQuery AI Assistant (LangGraph + Vertex AI), improving forecast accuracy by 42% and handling 500K+ daily queries with 65% lower latency.",
       },
       {
-        text: "Deployed a Legal Intelligence system for Ashmans Solicitors Ltd (UK) using custom Corrective RAG (CRAG) and a hybrid OCR pipeline, processing 50,000+ legal documents with 98% accuracy, achieving 94% QA precision, and reducing manual review effort by 70%.",
+        text: "Designed and implemented a Legal Intelligence platform for Ashmans Solicitors Ltd (UK) using custom Corrective RAG (CRAG) and a hybrid OCR pipeline, processing 50,000+ legal documents at 98% accuracy and reducing manual review effort by 70%.",
       },
       {
-        text: "Collaborated with BuiltIn.com to develop a multi-agent AI system using LangGraph, integrating prompt engineering and MCP (Claude, LibreChat) for tool-augmented workflows, achieving low-latency responses and consistently high accuracy in enterprise task execution.",
+        text: "Collaborated cross-functionally with BuiltIn.com to architect a multi-agent AI system leveraging LangGraph, advanced prompt engineering, and Model Context Protocol (MCP) for tool-augmented workflows, achieving consistently high accuracy and low-latency enterprise task execution.",
       },
       {
-        text: "Implemented diffusion-based image and video generation pipelines (SDXL + LoRA) for Loomi Sports (Canada), optimizing fine-tuning workflows and reducing training time by 70% for production advertisement deployment.",
+        text: "Optimized diffusion-based image and video generation pipelines (SDXL + LoRA) for Loomi Sports (Canada), streamlining fine-tuning workflows and reducing training time by 70% for production deployment.",
       },
       {
-        text: "Spearheaded the development of multilingual AI solutions for enterprise clients including Genova Healthcare, Estitmar Holdings, and Awtad, improving decision-making speed by 30% and supporting 1,800+ internal users.",
+        text: "Established predictive maintenance pipelines for Gulf Experts, raising prediction accuracy by 28% and reducing unplanned downtime by 22%. Spearheaded multilingual AI solutions for enterprise clients including Genova Research Organisation, Estithmar Holdings, and Awtad, accelerating decision-making by 30% across 1,800+ internal users.",
       },
       {
-        text: "Implemented predictive maintenance pipelines for Gulf Experts, improving prediction accuracy by 28% and reducing unplanned downtime by 22%.",
+        text: "Launched real-time voice and chat systems for CowParadise Games using STT/TTS pipelines and fine-tuned LLMs with OpenAI Realtime APIs, delivering sub-300ms latency and markedly improved interaction quality.",
       },
       {
-        text: "Developed AI-powered voice and chat systems for CowParadise Games, integrating real-time STT/TTS pipelines and LLM-based interactions using OpenAI Realtime APIs and custom fine-tuned models, achieving sub-300ms latency.",
+        text: "Created a multimodal AI pipeline for PostPals World combining GPT-4 image generation, YOLO face detection, ESRGAN enhancement, and ControlNet conditioning to generate personalized AI companion visuals from user photos.",
       },
       {
-        text: "Developed a multimodal AI pipeline for PostPals World, combining GPT-4 image generation, YOLO face detection, ESRGAN enhancement, and ControlNet-based conditioning to generate personalized AI companion visuals from user images.",
-      },
-      {
-        text: "Led and mentored a team of 8 interns and developers, managing client engagements, communicating technical solutions to stakeholders, and ensuring successful delivery of AI systems across international projects.",
+        text: "Provided technical leadership and mentorship to a team of 8 interns and developers while managing client engagements and communicating complex AI solutions to non-technical stakeholders across international projects.",
       },
     ],
     skills: [
@@ -80,7 +77,7 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    title: "AI Engineer",
+    title: "AI Engineer (Contract)",
     company: "CDAC - Center for Development of Advanced Computing",
     location: "Kerala, India",
     startDate: "March 2024",
@@ -88,19 +85,19 @@ export const experiences: Experience[] = [
     isRemote: false,
     achievements: [
       {
-        text: "Built end-to-end deep learning pipelines for histopathological Whole Slide Images (WSI), integrating U-Net-based segmentation and detection models to identify Tumor-Infiltrating Lymphocytes (TIL) in Triple-Negative Breast Cancer (TNBC), improving detection accuracy by 35% and segmentation precision by 28%.",
+        text: "Led end-to-end deep learning pipelines for histopathological Whole Slide Images (WSI), incorporating preprocessing, U-Net segmentation, and YOLO-based detection models to identify Tumor-Infiltrating Lymphocytes in Triple-Negative Breast Cancer, increasing detection accuracy by 35% and segmentation precision by 28%.",
       },
       {
-        text: "Developed computer vision-based detection systems using OpenCV and YOLOv8/v5 for medical imaging, enabling real-time analysis and improving diagnostic accuracy across multiple cancer detection tasks.",
+        text: "Engineered real-time computer vision detection systems using OpenCV and YOLOv8/v5 for medical imaging, enabling faster analysis and improving diagnostic accuracy across multiple cancer detection tasks.",
       },
       {
-        text: "Implemented cervical cancer detection pipelines on WSI data, achieving 92% recall and reducing false negatives by 45%, enhancing reliability of early-stage diagnosis.",
+        text: "Pioneered cervical cancer detection pipelines on WSI data, achieving 92% recall and reducing false negatives by 45% to support earlier clinical diagnosis.",
       },
       {
-        text: "Contributed to AI-driven healthcare systems under the UN Inter-Agency Task Force Award-winning 'Digitally Connected Tribal Colonies' initiative, enabling telemedicine-based screening for cervical cancer, oral cancer, diabetic retinopathy, and other NCDs across tribal regions.",
+        text: "Contributed to AI-driven telemedicine screening under the United Nations Inter-Agency Task Force Award-winning 'Digitally Connected Tribal Colonies' initiative, covering cervical cancer, oral cancer, diabetic retinopathy, and other non-communicable diseases in tribal regions.",
       },
       {
-        text: "Designed and deployed FastAPI-based backend services for real-time inference, supporting LLM-powered clinical pipelines and large-scale annotated medical image datasets.",
+        text: "Restructured and launched FastAPI backend services for real-time model inference, supporting LLM-enhanced clinical pipelines and large-scale annotated medical image datasets with low-latency performance.",
       },
     ],
     skills: [
@@ -130,16 +127,16 @@ export const experiences: Experience[] = [
     isRemote: false,
     achievements: [
       {
-        text: "Designed and deployed interactive dashboards using Tableau and Power BI, along with automated data pipelines in Python (Pandas) and SQL, reducing manual reporting effort by 35% and saving 120+ hours per month.",
+        text: "Built interactive Tableau and Power BI dashboards supported by automated Python (Pandas) and SQL data pipelines, reducing manual reporting effort by 35% and saving 120+ hours per month.",
       },
       {
-        text: "Analyzed large-scale sales and advertising data (tens of thousands of records/month) to evaluate campaign performance, client retention, and ROI, identifying key revenue drivers and high-performing strategies.",
+        text: "Analyzed large-scale sales and advertising datasets (tens of thousands of records per month) to evaluate campaign performance, client retention, and ROI, identifying key revenue drivers and high-performing strategies.",
       },
       {
-        text: "Performed comparative analysis on campaign variables such as location, pricing, and creatives to optimize campaign effectiveness and improve overall revenue outcomes.",
+        text: "Conducted comparative analysis of campaign variables including location, pricing, and creatives to optimize effectiveness and increase overall revenue outcomes.",
       },
       {
-        text: "Delivered data-driven insights to 3-4 key stakeholders, influencing client prioritization, pricing strategies, and resource allocation, enabling faster and more informed business decision-making.",
+        text: "Delivered data-driven recommendations to 3–4 senior stakeholders, shaping client prioritization, pricing strategies, and resource allocation for faster business decisions.",
       },
     ],
     skills: [

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
  * @returns The JSX element for the not found page.
  */
 export default function NotFound() {
+  console.log("Rendering 404 Page");
   return (
     <div className="mx-auto flex min-h-[60vh] max-w-2xl flex-col items-center justify-center px-4 text-center">
       <h1 className="text-balance text-3xl font-semibold tracking-tight">Page Not Found</h1>

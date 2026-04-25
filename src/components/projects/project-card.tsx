@@ -25,7 +25,7 @@ interface ProjectCardProps {
  * @returns Project card element.
  */
 export function ProjectCard({ project, className }: ProjectCardProps) {
-  const maxVisibleTags = 4;
+  const maxVisibleTags = 3; // Reduced for better mobile fit
   const visibleTags = project.tags.slice(0, maxVisibleTags);
   const hiddenTags = project.tags.slice(maxVisibleTags);
   const hiddenCount = hiddenTags.length;
@@ -41,7 +41,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         className,
       )}
     >
-      <CardHeader className="relative pb-4">
+      <CardHeader className="relative pb-4 p-5 sm:p-6">
         {/* Ambient background glow inside card */}
         <div
           aria-hidden="true"
@@ -73,7 +73,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         </ExpandableText>
       </CardHeader>
 
-      <CardContent className="space-y-5 relative z-10 flex-grow">
+      <CardContent className="space-y-5 relative z-10 flex-grow p-5 sm:p-6 pt-0 sm:pt-0">
         {/* Highlights first */}
         {project.highlights?.length ? (
           <ul className="space-y-2 text-sm text-foreground/80 font-sans">
@@ -140,7 +140,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
         </div>
       </CardContent>
 
-      <CardFooter className="mt-auto flex flex-wrap items-center justify-between gap-3 relative z-10 pt-4 border-t border-white/5">
+      <CardFooter className="mt-auto flex flex-wrap items-center justify-between gap-3 relative z-10 p-5 sm:p-6 pt-4 sm:pt-4 border-t border-white/5">
         <div className="flex items-center gap-2">
           <Button variant="outline" size="icon" className="h-10 w-10 bg-transparent border-white/10 hover:bg-white/5 hover:text-primary transition-colors" asChild>
             <Link

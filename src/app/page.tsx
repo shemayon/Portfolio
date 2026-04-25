@@ -34,6 +34,7 @@ export const metadata: Metadata = {
  * @returns Home page element.
  */
 export default function Home() {
+  console.log("Rendering Home Page");
   return (
     <div className="flex min-h-screen flex-col">
       <Hero />

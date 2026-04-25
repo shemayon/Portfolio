@@ -60,7 +60,7 @@ export function Navbar() {
             href="/"
             className="rounded-xs text-xl font-bold focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
-            Shemayon Soloman | Portfolio
+            Shemayon <span className="hidden sm:inline">Soloman</span><span className="hidden md:inline"> | Portfolio</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -8,9 +8,7 @@ const repoRoot = path.dirname(fileURLToPath(import.meta.url));
 const nextConfig = {
   // 1) In Next.js 14+, this tells Next.js to produce static files in "out/" during `next build`.
   output: "export",
-  turbopack: {
-    root: repoRoot,
-  },
+  // Turbopack is enabled by default in Next.js 15+; manual root setting is usually not needed.
 
   images: {
     loader: "custom",

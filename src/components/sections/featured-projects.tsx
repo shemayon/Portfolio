@@ -30,7 +30,7 @@ export function FeaturedProjects() {
               Featured Integrations
             </h2>
             <p className="text-lg text-muted-foreground font-sans">
-              A selection of my recent work in Industrial AI, Multi-Agent Systems, and Computer Vision.
+              A selection of my recent work in Tactical Defense, Multi-Agent Systems, and Industrial AI.
             </p>
           </div>
           <div className="hidden md:block">

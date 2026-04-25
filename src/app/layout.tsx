@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" });
 
 /** Enforces static rendering for the root layout. */
-export const dynamic = "error";
+// export const dynamic = "error";
 
 /** Defines the default viewport configuration. */
 export const viewport: Viewport = {
