@@ -1,3 +1,5 @@
+"use client";
+
 import BookOpenText from "lucide-react/dist/esm/icons/book-open-text";
 import ExternalLink from "lucide-react/dist/esm/icons/external-link";
 import GitFork from "lucide-react/dist/esm/icons/git-fork";
@@ -12,6 +14,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import type { ProjectCardModel } from "@/types/project";
+import { useEffect, useState } from "react";
 
 interface ProjectCardProps {
   project: ProjectCardModel;
@@ -25,6 +28,12 @@ interface ProjectCardProps {
  * @returns Project card element.
  */
 export function ProjectCard({ project, className }: ProjectCardProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const maxVisibleTags = 3; // Reduced for better mobile fit
   const visibleTags = project.tags.slice(0, maxVisibleTags);
   const hiddenTags = project.tags.slice(maxVisibleTags);
@@ -96,7 +105,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
               <TechBadge key={tag} name={tag} size="sm" className="bg-black/30 border-white/5 text-muted-foreground hover:text-primary" />
             ))}
           </div>
-          {hiddenCount > 0 ? (
+          {hiddenCount > 0 && isMounted ? (
             <Popover>
               <PopoverTrigger asChild>
                 <button
@@ -123,6 +132,12 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
                 </div>
               </PopoverContent>
             </Popover>
+          ) : hiddenCount > 0 ? (
+            <div
+              className="inline-flex h-11 items-center rounded-full border border-white/5 bg-black/30 px-3 text-[11px] font-mono text-muted-foreground md:h-8 md:px-2 md:py-0.5"
+            >
+              +{hiddenCount}
+            </div>
           ) : null}
         </div>
 
