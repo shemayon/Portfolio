@@ -1,3 +1,5 @@
+"use client";
+
 import Award from "lucide-react/dist/esm/icons/award";
 import Brain from "lucide-react/dist/esm/icons/brain";
 import Building2 from "lucide-react/dist/esm/icons/building-2";
@@ -11,12 +13,15 @@ import { educationList } from "@/data/education";
 import { experiences } from "@/data/experience";
 import { hobbies } from "@/data/hobbies";
 import { skillCategories } from "@/data/skills";
+import { useReducedMotion } from "framer-motion";
 
 /** Renders the AboutDetail component.
  * @remarks No parameters.
  * @returns The JSX element for the rendered about detail section.
  */
 export function AboutDetail() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background">
       <div className="container mx-auto px-4 py-24">
@@ -29,7 +34,7 @@ export function AboutDetail() {
                 fill
                 sizes="192px"
                 priority
-                className="object-cover scale-110 translate-x-4"
+                className={shouldReduceMotion ? "object-cover" : "object-cover scale-110 translate-x-4"}
               />
             </div>
             <div>
@@ -180,6 +185,7 @@ export function AboutDetail() {
                 src="/awards/award.jpg"
                 alt="Achievement Award"
                 fill
+                sizes="(max-width: 768px) 100vw, 800px"
                 className="object-contain rounded-lg"
               />
             </div>

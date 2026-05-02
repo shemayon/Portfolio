@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { About } from "@/components/sections/about";
-import { FeaturedProjects } from "@/components/sections/featured-projects";
-import { Hero } from "@/components/sections/hero";
 import { PROFILE } from "@/lib/profile";
+
+const Hero = dynamic(() => import("@/components/sections/hero").then((mod) => mod.Hero));
+const FeaturedProjects = dynamic(() => import("@/components/sections/featured-projects").then((mod) => mod.FeaturedProjects));
 
 /** Page metadata definition. */
 export const metadata: Metadata = {
@@ -34,7 +36,6 @@ export const metadata: Metadata = {
  * @returns Home page element.
  */
 export default function Home() {
-  console.log("Rendering Home Page");
   return (
     <div className="flex min-h-screen flex-col">
       <Hero />

@@ -4,16 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import ShaderBackground from "@/components/ui/shader-background";
 import { PROFILE } from "@/lib/profile";
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Mail from "lucide-react/dist/esm/icons/mail";
-import MessageCircle from "lucide-react/dist/esm/icons/message-circle";
 import Phone from "lucide-react/dist/esm/icons/phone";
-import Brain from "lucide-react/dist/esm/icons/brain";
 import X from "lucide-react/dist/esm/icons/x";
 import Copy from "lucide-react/dist/esm/icons/copy";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 /** Renders the Hero component.
  * @returns The JSX element for the rendered hero section.
@@ -21,6 +18,7 @@ import { AnimatePresence, motion } from "framer-motion";
 export function Hero() {
   const { toast } = useToast();
   const [activeContact, setActiveContact] = useState<{ label: string, value: string } | null>(null);
+  const shouldReduceMotion = useReducedMotion();
 
   const handleCopy = (text: string, label: string) => {
     navigator.clipboard.writeText(text);
@@ -29,12 +27,17 @@ export function Hero() {
       description: `${text} has been copied to your clipboard.`,
     });
   };
+
   return (
     <ShaderBackground>
       <section className="relative min-h-[90vh] flex items-center py-20 overflow-hidden">
-        {/* Ambient Neural Glows */}
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] mix-blend-screen opacity-50" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] mix-blend-screen opacity-50" />
+        {/* Ambient Neural Glows - Disabled if reduced motion is requested */}
+        {!shouldReduceMotion && (
+          <>
+            <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] mix-blend-screen opacity-50" />
+            <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-secondary/20 rounded-full blur-[120px] mix-blend-screen opacity-50" />
+          </>
+        )}
 
         <div className="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
           <div className="max-w-5xl flex flex-col items-start text-left gap-10">
@@ -54,10 +57,6 @@ export function Hero() {
               </div>
 
               <div className="flex flex-col items-start">
-                {/* <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-surface-container-highest border border-white/5">
-                  <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_10px_rgba(129,236,255,0.8)]" />
-                  <span className="text-xs font-mono text-primary tracking-wider uppercase">System Online // AI Ready</span>
-                </div> */}
                 <h1 className="text-balance text-4xl sm:text-5xl font-heading font-bold tracking-tighter md:text-7xl lg:text-[5rem] text-foreground leading-[1.1]">
                   Architecting <br className="hidden md:block" />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary filter drop-shadow-[0_0_20px_rgba(129,236,255,0.3)]">Intelligence.</span>
@@ -154,16 +153,17 @@ export function Hero() {
         {activeContact && (
           <div className="fixed inset-0 z-50 flex items-center justify-center px-6">
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={shouldReduceMotion ? { opacity: 0 } : { opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setActiveContact(null)}
               className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             />
             <motion.div
-              initial={{ scale: 0.9, opacity: 0, y: 20 }}
-              animate={{ scale: 1, opacity: 1, y: 0 }}
-              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              initial={shouldReduceMotion ? { opacity: 0, y: 0 } : { scale: 0.9, opacity: 0, y: 20 }}
+              animate={shouldReduceMotion ? { opacity: 1, y: 0 } : { scale: 1, opacity: 1, y: 0 }}
+              exit={shouldReduceMotion ? { opacity: 0, y: 0 } : { scale: 0.9, opacity: 0, y: 20 }}
+              transition={{ duration: 0.2 }}
               className="relative w-full max-w-sm rounded-2xl bg-[#161617] border border-white/20 p-8 shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden"
             >
               {/* Brighter Background Glow */}
